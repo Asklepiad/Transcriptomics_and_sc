@@ -34,10 +34,10 @@ For starting configuration setting I runned the below-written command:
 
 For configuring I used [appropriate GitHub page of SRA toolkit documentation](https://github.com/ncbi/sra-tools/wiki/05.-Toolkit-Configuration). I have chosen the following settings.
 
-1. *Main:* Enable remote access ![sra-toolkit configure1.png](./pictures/sra_toolkit_configure1)
-2. *Cache:* I choose `cache ` directory as a place of user repository. I have chosen 0 RAM for default settings in SRA toolkit. I am planning some benchmark tests in the future.  ![sra-toolkit configure2.png](./pictures/sra_toolkit_configure2)
-3. *AWS:* Report cloud instance identity ![sra-toolkit configure3.png](./pictures/sra_toolkit_configure3)
-4. *GCP:* Report cloud instance identity ![sra-toolkit configure4.png](./pictures/sra_toolkit_configure4)
-5. *Proxy:* No configures enabled ![sra-toolkit configure5.png](./pictures/sra_toolkit_configure5)
-6. *Tools:* User-repository (for more convinient accessing to downloaded SRA) ![sra-toolkit configure6.png](./pictures/sra_toolkit_configure6)
+1. *Main:* Enable remote access ![sra-toolkit configure1](./pictures/sra_toolkit_configure1.png)
+2. *Cache:* I choose `cache ` directory as a place of user repository. I have chosen 0 RAM for default settings in SRA toolkit. I am planning some benchmark tests in the future.  ![sra-toolkit configure2(./pictures/sra_toolkit_configure2.png)
+3. *AWS:* Report cloud instance identity ![sra-toolkit configure3](./pictures/sra_toolkit_configure3.png)
+4. *GCP:* Report cloud instance identity ![sra-toolkit configure4](./pictures/sra_toolkit_configure4.png)
+5. *Proxy:* No configures enabled ![sra-toolkit configure5](./pictures/sra_toolkit_configure5.png)
+6. *Tools:* User-repository (for more convinient accessing to downloaded SRA) ![sra-toolkit configure6](./pictures/sra_toolkit_configure6.png)
 
