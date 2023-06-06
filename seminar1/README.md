@@ -23,7 +23,7 @@ Then I need to install fastqc and multiqc.
 conda create -n qc python=3.9
 conda activate qc
 conda install -c bioconda fastqc=0.11.8
-conda install -c biocinda multiqc=1.14
+conda install -c bioconda multiqc=1.14
 ```
 
 
