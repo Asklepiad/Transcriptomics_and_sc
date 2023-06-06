@@ -16,6 +16,26 @@ On the next stafe I have installed SRA toolkit by conda.
 ```{bash}
 conda install -c bioconda sra-tools==3.0.5
 ```
+
+Then I need to install fastqc and multiqc.
+
+```{bash}
+conda create -n qc python=3.9
+conda activate qc
+conda install -c bioconda fastqc=0.11.8
+conda install -c biocinda multiqc=1.14
+```
+
+
+Finally I have installed nextflow.
+
+```{bash}
+conda create -n nf python=3.9
+conda activate nf
+conda install -c bioconda nextflow=23.04.1
+```
+
+
 ## SRA toolkit configuring
 
 Firstly I have created new subfolder in my transcriptomics folder:
