@@ -67,3 +67,5 @@ Objectives:
 
 - Download two sra files from [article](https://www.nature.com/articles/s41598-018-23226-4)
 - Quality analysis of them
+
+Pipeline have been created using nextflow. The code of pipeline is in `pipeline_download_sra.nf`. 
