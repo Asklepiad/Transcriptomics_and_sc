@@ -61,3 +61,9 @@ For configuring I used [appropriate GitHub page of SRA toolkit documentation](ht
 5. *Proxy:* No configures enabled ![sra-toolkit configure5](./pictures/sra_toolkit_configure5.png)
 6. *Tools:* User-repository (for more convinient accessing to downloaded SRA) ![sra-toolkit configure6](./pictures/sra_toolkit_configure6.png)
 
+## First pipeline creation
+
+Objectives:
+
+- Download two sra files from [article](https://www.nature.com/articles/s41598-018-23226-4)
+- Quality analysis of them
