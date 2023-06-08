@@ -9,3 +9,12 @@
 ## EM-algorithm for three clusters
 
 The code of upgraded EM-algorithm for three clusters is in `em3.ipynb` file. The main points are adding second `phi` variable, which equal to second cluster points' proportion; adding `mu3` and `sigma3` parameters; changing palette and assigning colors, depending on maximal likelihood (not likelihood ratio, as in two-variable version of algorithm).
+
+## Custom EM-algorithm for expressions
+
+Firstly I created new venvironment, and have uploaded kallisto.
+
+```bash
+conda create -n kallisto python==3.9.13
+
+```
