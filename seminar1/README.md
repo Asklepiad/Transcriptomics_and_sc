@@ -69,3 +69,8 @@ Objectives:
 - Quality analysis of them
 
 Pipeline have been created using nextflow. The code of pipeline is in `pipeline_download_sra.nf`. 
+Pipeline may be started by the below-written command.
+
+```bash
+conda run -n nf nextflow run pipeline_download_sra.nf --SRA <SRA number for downloading>
+```
