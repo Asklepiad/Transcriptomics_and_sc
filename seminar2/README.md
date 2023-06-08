@@ -25,3 +25,9 @@ Then I download human transcriptome throu the below-writed command:
 ```bash
 wget https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/GRCh38_latest/refseq_identifiers/GRCh38_latest_rna.fna.gz
 ```
+
+On the hext stage I added new block to pipeline, described in directory `seminar1`.
+
+```groovy
+
+```
