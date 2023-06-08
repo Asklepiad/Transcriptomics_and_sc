@@ -15,6 +15,7 @@ The code of upgraded EM-algorithm for three clusters is in `em3.ipynb` file. The
 Firstly I created new venvironment, and have uploaded kallisto.
 
 ```bash
-conda create -n kallisto python==3.9.13
-
+conda create -n kallisto python==3.9
+conda activate kallisto
+conda install -c bioconda kallisto=0.48.0
 ```
