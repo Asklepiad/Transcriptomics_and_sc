@@ -22,17 +22,17 @@ Then I need to install fastqc and multiqc.
 ```{bash}
 conda create -n qc python=3.9
 conda activate qc
-conda install -c bioconda fastqc=0.11.8
-conda install -c bioconda multiqc=1.14
+conda install -c bioconda fastqc==0.11.8
+conda install -c bioconda multiqc==1.14
 ```
 
 
-Finally I have installed nextflow.
+Finally I have installed snakemake.
 
 ```{bash}
-conda create -n nf python=3.9
+conda create -n snakemake python=3.9
 conda activate nf
-conda install -c bioconda nextflow=23.04.1
+conda install -c bioconda snakemake==7.30.1
 ```
 
 
@@ -70,6 +70,7 @@ Objectives:
 
 Pipeline have been created using nextflow. The code of pipeline is in `pipeline_download_sra.nf`. 
 Pipeline may be started by the below-written command.
+
 
 ```bash
 conda run -n nf nextflow run pipeline_download_sra.nf --SRA <SRA number for downloading>
