@@ -73,5 +73,5 @@ Pipeline may be started by the below-written command.
 
 
 ```bash
-conda run -n nf nextflow run pipeline_download_sra.nf --SRA <SRA number for downloading>
+conda run -n snakemake snakemake --cores all --use-conda logs/fastqc_<SRA number you need>.err logs/multiqc_<one of SRA numbers>.log
 ```
