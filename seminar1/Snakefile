@@ -1,0 +1,45 @@
+rule SRA_download:
+        threads: 1
+
+        conda:  "sra_tools"
+
+	output: "logs/sra_download_{sra_name}.log"
+
+        log:    "logs/sra_download_{sra_name}.err"
+
+        benchmark: "benchmarks/sra_download_{sra_name}.txt"
+
+        shell:  "fasterq-dump {wildcards.sra_name} -O {wildcards.sra_name} > {output} 2> {log}"
+
+rule fastQC:
+        threads: 1
+
+        conda:  "qc"
+
+        input:  "logs/sra_download_{sra_name}.log"
+
+	output:	"logs/fastqc_{sra_name}.log"
+
+        log:    "logs/fastqc_{sra_name}.err"
+
+        benchmark: "benchmarks/fastqc_{sra_name}.txt"
+
+        shell:  """
+		mkdir qc_{wildcards.sra_name}
+                fastqc -o qc_{wildcards.sra_name} {wildcards.sra_name}/* >> {output} 2>> {log}
+            	"""
+
+rule multiQC:
+        threads: workflow.cores
+
+        conda:  "qc"
+
+	input: 	"logs/fastqc_{sra_name}.log"
+
+        output: "logs/multiqc_{sra_name}.log"
+
+        log:    "logs/multiqc_{sra_name}.err"
+
+        benchmark: "benchmarks/multiqc_{sra_name}.txt"
+
+        shell:  "multiqc qc_* >> {output} 2>> {log}"
