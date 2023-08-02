@@ -8,7 +8,7 @@
 
 ## EM-algorithm for three clusters
 
-The code of the upgraded EM-algorithm for optional number of clusters is in the `Transcriptomics2.ipynb` file. You can create not only 2- or 3-clusters EM algorithm, but choose up to 8 clusters (for using more you need to manually add more colours in `colores` list in notebook). The code is also more flexible beacuse most of code wrapped in functions.
+The code of the upgraded EM-algorithm for optional number of clusters is in the `ex_max.ipynb` file. You can create not only 2- or 3-clusters EM algorithm, but choose up to 8 clusters (for using more you need to manually add more colours in `colores` list in notebook). The code is also more flexible beacuse most of code wrapped in functions.
 
 ## Pipeline for kallisto alignment
 
