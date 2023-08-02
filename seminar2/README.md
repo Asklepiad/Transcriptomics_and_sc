@@ -28,4 +28,6 @@ wget https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/GRCh38_latest/refs
 
 In the next stage, I added a new block to the pipeline, described in the directory `seminar1`. Updated pipeline is located in this durectory as "Snakefile". It can be started by the below-written command.
 
-``` ```
+```bash
+conda run -n snakemake snakemake --cores all --use-conda logs/alignment_GRCh38_latest_rna.log --config sra=[<target SRA>/*,<another target SRA>/*]
+```
