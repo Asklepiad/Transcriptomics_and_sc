@@ -8,7 +8,7 @@
 
 ## EM-algorithm for three clusters
 
-The code of the upgraded EM-algorithm for three clusters is in the `em3.ipynb` file. The main points are adding a second `phi` variable, which equals to second cluster points' proportion; adding `mu3` and `sigma3` parameters; changing the palette and assigning colours, depending on the maximal likelihood (not likelihood ratio, as in the two-variable version of the algorithm).
+The code of the upgraded EM-algorithm for optional number of clusters is in the `em3.ipynb` file. The main points are adding a second `phi` variable, which equals to second cluster points' proportion; adding `mu3` and `sigma3` parameters; changing the palette and assigning colours, depending on the maximal likelihood (not likelihood ratio, as in the two-variable version of the algorithm).
 
 ## Custom EM-algorithm for expressions
 
